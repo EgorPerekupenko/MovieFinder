@@ -1,0 +1,25 @@
+
+<!-- <pre>{{detail.results | json}}</pre> -->
+
+<div class="row" id="row">
+	<div class="col-md-4">
+		<p id="poster"><img ng-src="{{detail.results.Poster}}"></p>
+	</div>
+		<div class="col-md-8">
+			<ul>
+				<h3>{{detail.results.Title}}</h3>
+				<li>Year:  {{detail.results.Year}}</li>
+				<li>Country: {{detail.results.Country}}</li>
+				<li>Genre: {{detail.results.Genre}}</li>
+				<li>Director: {{detail.results.Director}}</li>
+				<li>Actors: {{detail.results.Actors}}</li>
+				<li>Description:<p>{{detail.results.Plot}}</p></li>
+				<div   id="IMDB">IMDB:{{detail.results.imdbRating}}</div>
+				
+			</ul>
+		</div>
+</div>	
+
+<a ui-sref="movie1">Back to home page</a>
+
+ <!-- CW, EP, BS, VZ -->

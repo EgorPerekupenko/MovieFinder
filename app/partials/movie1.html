@@ -1,0 +1,31 @@
+
+	<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search..." ng-model="vm.searchTerm" >							
+					<span class="input-group-btn">
+						<button class="btn btn-primary" ng-click="vm.getInfo()" >Go!</button>
+					</span>
+	</div>			
+	<br>				
+	<div class="row">
+		<div class="col-md-6" ng-repeat="movie in vm.results">
+				<div class="panel panel-info">	
+					<div class="panel-heading">
+						{{movie.Title}}
+					</div>
+						<div class="panel-body" >
+						<center>
+							<img ng-src="{{movie.Poster}}" class="picture">
+							<strong><p>{{movie.Year}}</p></strong>
+							<a ui-sref="movie2({movieDetails : movie.imdbID})">Click here to view on IMDB</a>
+						</center>
+
+						</div>
+                </div>
+		<!-- <pre>{{vm.results | json}}</pre> -->
+				
+		</div>
+	</div>			
+	
+
+
+<!-- CW, EP, BS, VZ -->
